@@ -1,13 +1,8 @@
 import "./App.css";
-import logo from "./logo.png";
+import { Navbar } from "./layouts/NavbarAndFooter/Navbar";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>React - Spring Project with Kodepatra</h1>
-      <img src={logo} className="App-logo" alt="logo" />
-    </div>
-  );
+  return <Navbar />;
 }
 
 export default App;
