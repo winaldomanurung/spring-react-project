@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const ExploreTopBooks = () => {
   return (
     <div className="p-5 mb-4 bg-dark header">
@@ -5,13 +7,13 @@ export const ExploreTopBooks = () => {
         <div>
           <h1 className="display-5 fw-bold">Discover your favorite books.</h1>
           <p className="col-md-8 fs-4">What do you have in mind?</p>
-          <a
-            href="#"
+          <Link
+            to="/search"
             type="button"
             className="btn main-color btn-lg text-white"
           >
             Explore
-          </a>
+          </Link>
         </div>
       </div>
     </div>
