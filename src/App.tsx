@@ -5,6 +5,7 @@ import { HomePage } from "./layouts/HomePage/HomePage";
 import { Footer } from "./layouts/NavbarAndFooter/Footer";
 import { Navbar } from "./layouts/NavbarAndFooter/Navbar";
 import { SearchBooksPage } from "./layouts/SearchBooksPage/SearchBooksPage";
+import { BookCheckoutPage } from "./layouts/BookCheckoutPage/BookCheckoutPage";
 
 export const App = () => {
   return (
@@ -22,6 +23,10 @@ export const App = () => {
 
           <Route path="/search">
             <SearchBooksPage />
+          </Route>
+
+          <Route path="/checkout/:id">
+            <BookCheckoutPage />
           </Route>
         </Switch>
       </div>
